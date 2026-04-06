@@ -1,0 +1,24 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 35px;
+    overflow: hidden;
+}
+
+.logo {
+    font-size: 34px;
+}
+
+.l-nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.r-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
