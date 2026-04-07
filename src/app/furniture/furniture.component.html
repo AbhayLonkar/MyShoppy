@@ -1,1 +1,33 @@
-<p>furniture works!</p>
+<div class="category-landing-page">
+    <div class="category-main">
+        <div class="category-header">
+            <div class="category-text">
+                <h1>Grab Upto 50% Off On Selected Furnitures</h1>
+                <button>Buy Now</button>
+            </div>
+        </div>
+        <div class="sortBy"><span>Sort By</span></div>
+        <h2>Furnitures For You!</h2>
+        <div class="cataloge-list">
+            <div class="cataloge-item" *ngFor="let n of data">
+                <img [src]="n.path" alt="img" class="cataloge-img" width="250x">
+                <div class="item-name">
+                    <p>{{n.name}}</p>
+                    <p>Rs. {{n.price}}</p>
+                </div>
+                <div class="item-seller">
+                    {{n.seller}}
+                </div>
+                <div class="rating">
+                    <img src="assets/star.svg" alt="star" height="15px">
+                    <img src="assets/star.svg" alt="star" height="15px">
+                    <img src="assets/star.svg" alt="star" height="15px">
+                    <img src="assets/star.svg" alt="star" height="15px">
+                    <img src="assets/star.svg" alt="star" height="15px">
+                    <p>(129)</p>
+                </div>
+                <button class="addtoCartBtn">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</div>

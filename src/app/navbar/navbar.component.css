@@ -6,8 +6,10 @@ nav {
     overflow: hidden;
 }
 
-.logo {
+.logo a {
     font-size: 34px;
+    text-decoration: none;
+    color: #333;
 }
 
 .l-nav {

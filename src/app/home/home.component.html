@@ -9,8 +9,9 @@
 <div class="categories">
     <h2>Shop Our Top Categories</h2>
     <div class="category-container">
-        <div *ngFor="let n of categories" class="category-item" [ngStyle]="{'background-image': 'url(' + n.bg + ')'}">
+        <a *ngFor="let n of categories" class="category-item" [routerLink]="n.link"
+            [ngStyle]="{'background-image': 'url(' + n.bg + ')'}">
             <h2>{{n.title}}</h2>
-        </div>
+        </a>
     </div>
 </div>

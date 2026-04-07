@@ -19,6 +19,119 @@
       box-sizing: border-box;
       font-family: "Poppins";
     }
+
+    .category-landing-page {
+      margin: 5px 15px;
+      padding: 20px;
+      background: mediumseagreen;
+      min-height: 100vh;
+    }
+
+    .category-main {
+      background: white;
+      padding: 18px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .category-header {
+      background: papayawhip;
+      padding: 18px 12px;
+    }
+
+    .category-text {
+      /* border: 2px solid black; */
+      width: 500px;
+      margin-left: 10%;
+      padding: 12px;
+    }
+
+    .category-text button {
+      margin-top: 10px;
+      padding: 10px 14px;
+      border-radius: 22px;
+      border: none;
+      outline: none;
+      background: #333;
+      color: white;
+    }
+
+    .sortBy {
+      text-align: right;
+    }
+
+    .sortBy span {
+      padding: 2px 4px;
+      border: 1px solid black;
+      border-radius: 22px;
+      font-size: x-small;
+      font-weight: bold;
+    }
+
+    .cataloge-list {
+      display: flex;
+      flex-wrap: wrap;
+      /* align-items: center; */
+      justify-content: center;
+      padding: 0 8px;
+      gap: 10px;
+    }
+
+    .cataloge-item {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      width: 300px;
+      margin: 10px 0;
+    }
+
+    .cataloge-img {
+      background-color: #ddd;
+      border-radius: 14px;
+      object-fit: contain;
+    }
+
+    .item-name {
+      display: flex;
+      justify-content: space-between;
+      /* background: red; */
+      padding: 0 5px;
+      width: 250px;
+      font-size: small;
+      font-weight: bolder;
+    }
+
+    .item-seller {
+      font-size: 10px;
+      text-align: left;
+      width: 250px;
+      padding: 0 5px;
+
+    }
+
+    .rating {
+      display: flex;
+      font-size: small;
+      width: 250px;
+      padding: 0 5px;
+    }
+
+    .addtoCartBtn {
+      border: 1px solid black;
+      background: transparent;
+      padding: 4px 10px;
+      border-radius: 22px;
+      width: fit-content;
+      transition: all .2s ease;
+
+      &:hover {
+        background: #000;
+        color: white;
+        cursor: pointer;
+      }
+    }
   </style>
 </head>
 
