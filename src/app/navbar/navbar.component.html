@@ -6,7 +6,10 @@
         <span>Categories ▾</span>
     </div>
     <div class="r-nav">
-        <img src="assets/cart.png" alt="cart" height="30px">
-        <span>Cart</span>
+        <a routerLink="/cart" class="cart-link">
+            <img src="assets/cart.png" alt="cart" height="30px">
+            <span>Cart</span>
+            <span class="cart-count" *ngIf="cartCount > 0">{{ cartCount }}</span>
+        </a>
     </div>
 </nav>

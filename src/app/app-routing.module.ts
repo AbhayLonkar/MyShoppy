@@ -7,6 +7,7 @@ import { BooksComponent } from './books/books.component';
 import { TechComponent } from './tech/tech.component';
 import { SneakersComponent } from './sneakers/sneakers.component';
 import { TravelComponent } from './travel/travel.component';
+import { CartComponent } from './cart/cart.component';
 
 const routes: Routes = [
   {
@@ -37,6 +38,10 @@ const routes: Routes = [
     path: "travel",
     component: TravelComponent
   },
+  {
+    path: "cart",
+    component: CartComponent
+  }
 ];
 
 @NgModule({
