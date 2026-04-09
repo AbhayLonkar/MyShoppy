@@ -10,6 +10,7 @@ import { CartItem } from '../cart.service';
 export class CartComponent {
   cartItems: CartItem[] = [];
   totalPrice: number = 0;
+  isOrderPlaced: boolean = true;
 
   constructor(private cartService: CartService) { }
 
@@ -53,4 +54,10 @@ export class CartComponent {
       this.loadCart();
     }
   }
+
+  toggleOrderPlaced() {
+    this.isOrderPlaced = !this.isOrderPlaced;
+  }
 }
+
+

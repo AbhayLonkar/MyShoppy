@@ -1,0 +1,43 @@
+.main {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -100px;
+    height: -webkit-fill-available;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.722);
+}
+
+.main-container {
+    background-color: white;
+    padding: 50px;
+    border-radius: 8px;
+    width: 500px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    flex-direction: column;
+}
+
+.main-title {
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.transaction-id {
+    font-size: small;
+}
+
+.main-container a {
+    padding: 10px;
+    background-color: orangered;
+    color: white;
+    border: none;
+    text-decoration: none;
+    border-radius: 22px;
+    width: fit-content;
+    align-self: center;
+    font-weight: bold;
+}

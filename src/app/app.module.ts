@@ -13,6 +13,7 @@ import { SneakersComponent } from './sneakers/sneakers.component';
 import { TravelComponent } from './travel/travel.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
+import { OrderPlacedComponent } from './order-placed/order-placed.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { HomeComponent } from './home/home.component';
     TravelComponent,
     NavbarComponent,
     HomeComponent,
+    OrderPlacedComponent,
   ],
   imports: [
     BrowserModule,
