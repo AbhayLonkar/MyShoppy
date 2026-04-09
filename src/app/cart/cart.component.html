@@ -18,11 +18,14 @@
                         </div>
                     </div>
                 </div>
-                <button class="remove-btn" (click)="removeFromCart(n.id)">Remove form Cart</button>
-                <div class="item-r">
-                    <p class="product-price">Rs. {{n.price}}</p>
-                    <p>Quanitity: {{n.quantity}}</p>
+                <div class="btn-container">
+                    <button class="remove-btn" (click)="removeFromCart(n.id)">Remove form Cart</button>
+                    <div class="item-r">
+                        <p class="product-price">Rs. {{n.price}}</p>
+                        <p>Quanitity: {{n.quantity}}</p>
+                    </div>
                 </div>
+
             </div>
 
         </div>

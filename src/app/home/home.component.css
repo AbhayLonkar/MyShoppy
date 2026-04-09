@@ -7,6 +7,7 @@
     background-size: cover;
     display: flex;
     align-items: center;
+    border-radius: 12px;
 }
 
 .main-text {
@@ -34,6 +35,13 @@
     outline: none;
     font-weight: bold;
     width: fit-content;
+    transform: all .2s ease;
+
+    &:hover {
+        cursor: pointer;
+        background: #003d00;
+
+    }
 }
 
 .categories {
@@ -53,15 +61,39 @@
 .category-item {
     width: 200px;
     text-align: center;
+    text-decoration: none;
     padding: 8px 24px;
     border-radius: 12px;
     color: white;
     height: 200px;
-    background-size: cover;
+    background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
+    transition: all .3s ease;
 
     &:hover {
         cursor: pointer;
+        background-size: 110%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .main-text {
+        margin: 0;
+    }
+
+    .main-text h1 {
+        font-size: 36px;
+    }
+
+    .categories {
+        margin: 15px 0;
+        padding: 0 20px;
+    }
+
+    .category-item {
+        width: 100%;
+        height: 250px;
+
     }
 }

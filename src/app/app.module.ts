@@ -14,6 +14,7 @@ import { TravelComponent } from './travel/travel.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { OrderPlacedComponent } from './order-placed/order-placed.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { OrderPlacedComponent } from './order-placed/order-placed.component';
     NavbarComponent,
     HomeComponent,
     OrderPlacedComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

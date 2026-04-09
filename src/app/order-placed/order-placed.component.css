@@ -13,12 +13,19 @@
     background-color: white;
     padding: 50px;
     border-radius: 8px;
-    width: 500px;
+    width: 400px;
     text-align: center;
     display: flex;
     justify-content: center;
     gap: 8px;
     flex-direction: column;
+}
+
+.main-container img {
+    align-self: center;
+    height: 200px;
+    width: 300px;
+    object-fit: contain;
 }
 
 .main-title {
@@ -40,4 +47,10 @@
     width: fit-content;
     align-self: center;
     font-weight: bold;
+}
+
+@media (max-width: 1024px) {
+    .main-container {
+        width: 80%;
+    }
 }

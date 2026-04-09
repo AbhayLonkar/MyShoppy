@@ -1,230 +1,3 @@
-/* .cart-container {
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 20px;
-}
-
-h1 {
-    text-align: center;
-    color: #333;
-    margin-bottom: 30px;
-}
-
-.empty-cart {
-    text-align: center;
-    padding: 60px 20px;
-    background-color: #f5f5f5;
-    border-radius: 8px;
-}
-
-.empty-cart p {
-    font-size: 18px;
-    color: #666;
-    margin-bottom: 20px;
-}
-
-.empty-cart a {
-    display: inline-block;
-    padding: 12px 30px;
-    background-color: #2196F3;
-    color: white;
-    text-decoration: none;
-    border-radius: 4px;
-    transition: background-color 0.3s;
-}
-
-.empty-cart a:hover {
-    background-color: #0b7dda;
-}
-
-.cart-content {
-    display: flex;
-    gap: 30px;
-    flex-wrap: wrap;
-}
-
-.cart-items {
-    flex: 1;
-    min-width: 600px;
-}
-
-.cart-table {
-    width: 100%;
-    border-collapse: collapse;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    overflow: hidden;
-}
-
-.cart-table thead {
-    background-color: #2196F3;
-    color: white;
-}
-
-.cart-table th {
-    padding: 15px;
-    text-align: left;
-    font-weight: 600;
-}
-
-.cart-table td {
-    padding: 15px;
-    border-bottom: 1px solid #ddd;
-}
-
-.cart-table tbody tr:hover {
-    background-color: #f9f9f9;
-}
-
-.product-info {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.product-info img {
-    width: 60px;
-    height: 60px;
-    object-fit: cover;
-    border-radius: 4px;
-}
-
-.product-name {
-    font-weight: 600;
-    margin: 0;
-    color: #333;
-}
-
-.product-seller {
-    font-size: 12px;
-    color: #999;
-    margin: 5px 0 0 0;
-}
-
-.quantity-input {
-    width: 60px;
-    padding: 8px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    text-align: center;
-}
-
-.quantity-input:focus {
-    outline: none;
-    border-color: #2196F3;
-    box-shadow: 0 0 5px rgba(33, 150, 243, 0.3);
-}
-
-.remove-btn {
-    padding: 8px 15px;
-    background-color: #f44336;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.remove-btn:hover {
-    background-color: #da190b;
-}
-
-.cart-summary {
-    width: 350px;
-    background-color: #f5f5f5;
-    padding: 20px;
-    border-radius: 8px;
-    height: fit-content;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.summary-item {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 15px;
-    font-size: 14px;
-    color: #666;
-}
-
-.summary-item.total {
-    display: flex;
-    justify-content: space-between;
-    font-size: 18px;
-    font-weight: 600;
-    color: #333;
-    border-top: 2px solid #ddd;
-    border-bottom: 2px solid #ddd;
-    padding: 15px 0;
-    margin: 20px 0;
-}
-
-.checkout-btn {
-    width: 100%;
-    padding: 14px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    margin-bottom: 10px;
-}
-
-.checkout-btn:hover {
-    background-color: #45a049;
-}
-
-.clear-cart-btn {
-    width: 100%;
-    padding: 10px;
-    background-color: #757575;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    font-size: 14px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.clear-cart-btn:hover {
-    background-color: #616161;
-}
-
-@media (max-width: 768px) {
-    .cart-content {
-        flex-direction: column;
-    }
-
-    .cart-items {
-        min-width: 100%;
-    }
-
-    .cart-summary {
-        width: 100%;
-    }
-
-    .cart-table {
-        font-size: 14px;
-    }
-
-    .cart-table th,
-    .cart-table td {
-        padding: 10px;
-    }
-
-    .product-info {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .product-info img {
-        width: 50px;
-        height: 50px;
-    }
-} */
-
 .main {
     margin: 5px 15px;
     padding: 20px;
@@ -238,9 +11,12 @@ h1 {
     background-color: white;
     width: 70%;
     display: flex;
+    border-radius: 12px;
     align-items: center;
     flex-direction: column;
     justify-content: space-around;
+    padding: 20px 0;
+    gap: 10px;
 }
 
 .cart-container {
@@ -250,6 +26,10 @@ h1 {
     display: flex;
     flex-direction: column;
     gap: 4px;
+    border-radius: 8px;
+    overflow-y: scroll;
+
+
 }
 
 .cart-item {
@@ -305,6 +85,12 @@ h1 {
     padding: 2px 14px;
 }
 
+.btn-container {
+    display: flex;
+    gap: 80px;
+    align-items: center;
+}
+
 .remove-btn {
     padding: 8px 15px;
     background-color: #f44336;
@@ -324,6 +110,7 @@ h1 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100px;
 }
 
 .item-r .product-price {
@@ -397,4 +184,83 @@ h1 {
     padding: 10px;
     border-radius: 8px;
     text-decoration: none;
+}
+
+@media (max-width: 1024px) {
+    .main-container {
+        background-color: white;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .cart-container {
+        width: 95%;
+        padding: 5px;
+        gap: 4px;
+    }
+
+    .cart-item {
+        flex-direction: column;
+        padding: 0 15px;
+        justify-content: space-between;
+        align-items: center;
+        margin: 4px;
+    }
+
+    .item-l {
+        /* border: 1px solid black; */
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-img {
+        /* border: 2px solid red; */
+        object-fit: contain;
+        height: 200px;
+        width: 200px;
+    }
+
+    .item-info {
+        padding: 4px;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .btn-container {
+        gap: 10px;
+    }
+
+    .total-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+        font-weight: bold;
+        align-items: center;
+        font-size: large;
+    }
+
+    .quantity-input {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        text-align: center;
+    }
+
+    .quantity-input:focus {
+        outline: none;
+        border-color: #2196F3;
+        box-shadow: 0 0 5px rgba(33, 150, 243, 0.3);
+    }
+
+    .qty-input {
+        display: flex;
+        width: 100%;
+    }
 }

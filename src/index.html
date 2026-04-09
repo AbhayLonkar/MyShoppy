@@ -46,7 +46,6 @@
     }
 
     .category-text {
-      /* border: 2px solid black; */
       width: 500px;
       margin-left: 10%;
       padding: 12px;
@@ -135,6 +134,26 @@
         color: white;
         cursor: pointer;
       }
+    }
+
+    @media (max-width: 1024px) {
+
+      .category-text {
+        width: auto;
+        margin: 0;
+        padding: 12px;
+      }
+
+      .cataloge-item {
+        align-items: center;
+      }
+
+      .addtoCartBtn {
+        align-self: self-start;
+        margin-left: 10px;
+      }
+
+
     }
   </style>
 </head>
